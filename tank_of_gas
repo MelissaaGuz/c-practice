@@ -1,0 +1,28 @@
+//a program that calculates the distance per tank of gas
+#include <iostream>
+using namespace std;
+
+int main() {
+    //include values
+    //car with 20 gallon gas tank 
+    const double TankCapacity = 20.0;
+
+    //miles per gallon when driven in town
+    const double townMPG = 23.5;
+
+    //miles per gallon when driven on the highway 
+    const double highwayMPG = 28.9;
+
+    //calculate the distance the car can travel in town 
+    double distanceInTown = TankCapacity * townMPG;
+
+    //calculate the distance the car can travel on the highway
+    double distanceInHighway = TankCapacity * highwayMPG;
+
+    //sentences 
+    cout << "This is the distance the car can travel when driven around town: " << distanceInTown << " miles" << endl; //add miles and endl
+    cout << "This is the distance the car can travel when driven on the highway: " << distanceInHighway << " miles" << endl; //add miles 
+
+    return 0;
+}
+

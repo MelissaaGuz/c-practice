@@ -1,0 +1,19 @@
+//sum of two numbers
+//a program written to show an example of adding numbers 
+#include <iostream>
+using namespace std;
+
+int main () {
+
+    //values 
+    int num1 = 50;
+    int num2 = 10;
+
+    //calculate
+    int total = num1 + num2;
+
+    //sentence 
+    cout << "the sum of " << num1 << " and " << num2 << " is: " << total << endl;
+
+    return 0;
+}

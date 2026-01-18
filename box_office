@@ -1,0 +1,50 @@
+//make a code for movie theatre, what is the cost of tickets sold? 
+//box office
+#include <iostream>
+#include <iomanip>
+#include <string>
+using namespace std;
+
+int main() {
+    //variables
+    string movieName;
+
+    //tickets per person 
+    int adultTickets, childTickets;
+
+    //prices and percentage 
+    const double adultTicketPrice = 10.00;
+    const double childTicketPrice = 6.00;
+    const double distributorPercentagePaid = 0.8;
+
+    //statements 
+    cout << "enter movie name: ";
+    cin >> movieName;
+    cout << "enter the quantity of adult tickts sold: ";
+    cin >> adultTickets;
+    cout << "enter the quantity of child tickets sold: ";
+    cin >> childTickets;
+
+    //calculate the theatres gross profit 
+    double grossProfit = (adultTickets * adultTicketPrice) + (childTickets * childTicketPrice);
+    //calculate the net profit
+    double netProfit = grossProfit * distributorPercentagePaid;
+    //calculate distributor payment 
+    double distributorPayment = grossProfit - netProfit;
+
+    //statements
+    cout << fixed; //for the decimal places
+    cout << "Movie Name: " << movieName << "Wheels of Fury" << endl;
+    //define adult and child tickets quantity
+    cout << "Adult tickets sold: " << adultTickets << endl;
+    cout << "Child tickets sold: " << childTickets << endl;
+
+    //define profits 
+    cout << "Gross Box Office profit: S" << grossProfit << endl;
+    cout << "Net Box Office profit: $" << netProfit << endl;
+
+    //define amount paid
+    cout << "Amount paid to distributor: $" << distributorPayment << endl;
+
+    return 0;
+}

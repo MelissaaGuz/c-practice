@@ -1,0 +1,40 @@
+//make an example of a score testing average for students 
+//test average 
+#include <iostream>
+using namespace std;
+
+int main() {
+    //the test scores 
+    double score1, score2, score3, score4, score5, avg;
+
+    //these are the following statements for the scores
+
+    //score 1
+    cout << "first test score: "; 
+    cin >> score1;
+
+    //score 2
+    cout << "second test score: ";
+    cin >> score2;
+
+    //score 3
+    cout << "third test score: ";
+    cin >> score3;
+
+    //score 4
+    cout << "fourth test score: ";
+    cin >> score4;
+
+    //score 5
+    cout << "fifth test score: ";
+    cin >> score5; 
+
+    //average calculation
+`   avg = (score1 + score2 + score3 + score4 + score5)/5;
+    
+    //average statement 
+    cout << "The average is " << avg << endl;
+
+    return 0;
+
+}
